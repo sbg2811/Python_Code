@@ -1,0 +1,84 @@
+a=1.1
+b=20
+print(a-b)
+type(a-b)
+
+a=input()#input will always be STRING
+print(a)
+type(a)
+
+a=int(input())#typecasting input as INT
+print(a)
+type(a)
+
+a=input()
+b=input()
+print(a+b)#this will concantate input as input is string
+type(a+b)
+
+x=int(input())
+y=int(input())
+print(x+y)
+type(x+y)
+
+a=input()
+b=input()
+print(a+b) #concanate the input
+print(a+" "+b)#to add space between 2 input string
+
+#Mutable Datatype 
+#LIST DifferentDatatype [] ordered index duplicatevalues WithIndexChangeable
+#DICT DiffenrtDatatype {} keyvalue 
+#Immuatable Datatype 
+#STR
+#TUPEL DifferntDatatype () ordered Index   Duplicate Values
+#SET   DifferntDatatype {} unorder noIndex NoDuplicate Value
+
+#list
+l=[1,2,2,"Hello"]
+print(l)
+l[2]=3
+print(l) #Mutable
+l.insert(2,"Append2") #position of index and what to insert
+print(l) #shows apended value
+l.remove('Append2') #provide which value to be removed
+print(l)
+l.pop() #removes last entry in list
+print(l)
+l.pop(1) #removes 1 position value
+print(l)
+print(l.sort())
+
+#dict
+d={"Sarika":101,"Shashin":102,"Nabhare":103} 
+print(d) #complete list of keys and values
+print(d.keys()) #provide keys in dict
+print(d.values())#provide values in dict
+d["CHIYASH"]=104 #adding new key value pair
+print(d)
+print(d["CHIYASH"]) #print value of key
+
+a="Hello World" #Indexing Postion
+a[0] #this is will give Index 0 which letter is there
+len(a) #length
+##a[0]='S' #this is to replace 0 postion letter with S which will give Syntax error we can not assign with index position
+a.replace("H","S")
+
+#Tuples the combination of differnt type of datatype together in ()
+#ordered Index #Index value 12 is 0, "ABC" is 1 and so on
+#it can hold duplicate values
+t=(12,"ABC",1.23,1.23)
+print(t)
+print(type(t))
+print(len(t)) #no of items in TUPLE
+t[3] #3rd item in Tuple
+#t.replace("ABC",'PQR') #SYNTAX Error-Tuples are immutable
+print(t[1].replace("ABC","XYZ")) #this way replace will work
+
+#set no duplicate values
+#unorder means no indexing
+#set is created with {}
+s={1,1,2.3,"set1",5.5,"set2"}
+print(s) #duplicate 1 is removed no preference in output print
+
+
